@@ -12,6 +12,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'rabl'
 
 group :development, :test do
   gem 'rspec-rails'
