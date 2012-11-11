@@ -6,4 +6,8 @@ describe WorkDay do
   it { should allow_mass_assignment_of :day }
   it { should allow_mass_assignment_of :start }
   it { should allow_mass_assignment_of :stop }
+
+  it { should validate_presence_of :day }
+  it { should validate_presence_of :start }
+  it { should validate_presence_of :stop }
 end

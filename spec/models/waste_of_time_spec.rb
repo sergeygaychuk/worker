@@ -5,4 +5,8 @@ describe WasteOfTime do
 
   it { should allow_mass_assignment_of :duration }
   it { should allow_mass_assignment_of :tag }
+
+  it { should validate_presence_of :duration }
+  it { should validate_presence_of :tag }
+  it { should validate_presence_of :work_day_id }
 end
