@@ -1,0 +1,20 @@
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: worker_production
+  username: worker
+  password: worker
+
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: worker_development
+  username: worker
+  password: worker
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: worker_test
+  username: worker
+  password: worker
