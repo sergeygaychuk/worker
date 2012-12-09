@@ -14,4 +14,7 @@
 //= require jquery_ujs
 //= require knockout
 //= require sammy
+//= require jquery-ui
+//= require jquery.ui.timepicker.js
+//= require i18n/jquery.ui.timepicker-ru
 //= require_tree .

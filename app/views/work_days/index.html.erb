@@ -1,6 +1,34 @@
 <h1 data-bind="text: day"></h1>
 <form>
   <div>
-    <label>Start at:</label>
+    <label for="start_at">Start at:</label>
+    <input type="text" name="start_at" id="start_at"/>
+  </div>
+  <div>
+    <label for="working_time">Working time:</label>
+    <input type="text" name="working_time" data-bind="value: working_time"/>
+  </div>
+  <div>
+    <table border="1">
+      <thead>
+        <tr>
+          <th style="min-width: 200px; background-color: #add8e6;">Hours</th>
+          <th style="min-width: 200px; background-color: #add8e6;">Minutes</th>
+          <th style="min-width: 100px; background-color: #add8e6;">Action</th>
+        </tr>
+      </thead>
+      <tbody data-bind="foreach: wastes">
+        <tr>
+          <td><input type="text" data-bind="value: hours"/></td>
+          <td><input type="text" data-bind="value: minutes"/></td>
+          <td><button data-bind="click: $parent.removeWaste">Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button data-bind="click: addWaste">Add waste</button>
+  </div>
+
+  <div>
+    <h1 data-bind="text: 'End of work!: ' + end.hour() + ':' + end.minutes()"></h1>
   </div>
 </form>
